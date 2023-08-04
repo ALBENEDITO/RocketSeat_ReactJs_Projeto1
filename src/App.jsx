@@ -5,11 +5,10 @@ export function App() {
   return (
     <>
       
-      <Post/>
-      <Post/>
-      <Post/>
-      
-
+      <Post
+        author="Allan"
+        content="arglqkwrngqw´grpol qawr´goiqwrg´~qwplongk qw´rogjkwqg"
+      />
     </>
   )
 }
