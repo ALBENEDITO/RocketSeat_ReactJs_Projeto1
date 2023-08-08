@@ -9,9 +9,9 @@ const posts = [
   {
     id: 1,
     author: {
-      avatarUrl: 'https://github.com/diego3g.png',
-      name: 'Diego Fernandes',
-      role: 'CTO @Rocketseat'
+      avatarUrl: 'https://github.com/albenedito.png',
+      name: 'Allan Benedito',
+      role: 'Programador Jr Canon'
     },
     content: [
       { type: 'paragraph', content: 'Fala galera 👋' },
