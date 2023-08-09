@@ -10,7 +10,7 @@ import styles from './Post.module.css';
 
 export function Post({ author, publishedAt, content }) {
   const [comments, setComments] = useState([
-    'Teste som Testii testii',
+    'Teste soaaefam Testii testii','Testavadsee som Testii testii','Teste som Testii testii','Teste dgfaedfedsom Testii testii',
   ]);
 
   const [newCommentText, setNewCommentText] = useState('');
@@ -35,8 +35,12 @@ export function Post({ author, publishedAt, content }) {
     setNewCommentText(event.target.value);
   }
 
-  function deleteComment(comment) {
-    console.log(`Deletar comentário ${comment}`)
+  function deleteComment(commentToDelete) {
+    const commentsWithoutDeletedOne = comments.filter(comment => {
+      return comment !== commentToDelete;
+    })
+
+    setComments(commentsWithoutDeletedOne);
   }
 
   return (
