@@ -52,14 +52,14 @@ export function Post({ author, publishedAt, content }) {
       </header>
 
       <div className={styles.content}>
-        {content.map((line) => {
+        {content.map((line, key) => {
           
           if (line.type === 'paragraph') {
             
-            return <p key = { line.toString() }>{line.content}</p>;
+            return <p key={key}>{line.content}</p>;
           } else if (line.type === 'link') {
             
-            return <p key = { line.toString() }><a href="#">{line.content}</a></p>
+            return <p key={key}><a href="#">{line.content}</a></p>
           }
         })}
       </div>
